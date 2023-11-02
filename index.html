@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>회원가입 페이지</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrap">
+            <h1>회원가입</h1>
+            <form>
+                <dl>
+                    <dt>아이디</dt>
+                    <dd>
+                        <input type="text" placeholder="아이디 입력">
+                        <input type="idcheck" value="중복체크">
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>비밀번호</dt>
+                    <dd><input type="password" placeholder="비밀번호 입력"></dd>
+                </dl>
+                <dl>
+                    <dt>비밀번호 확인</dt>
+                    <dd><input type="password" placeholder="비밀번호 재입력"></dd>
+                </dl>
+                <dl>
+                    <dt>이름</dt>
+                    <dd><input type="text" placeholder="이름 입력"></dd>
+                </dl>
+                <dl>
+                    <dt>전화번호</dt>
+                    <dd><input type="tel" placeholder="전화번호 입력"></dd>
+                </dl>
+                <dl>
+                    <dt>주소</dt>
+                    <dd><input type="button" value="주소찾기"></dd>
+                </dl>
+                <dl>
+                    <dt>이메일</dt>
+                    <dd>
+                        <input type="email" placeholder="이메일 입력">@
+                        <select>
+                            <option>gmail.com</option>
+                            <option>naver.com</option>
+                            <option>kakao.com</option>
+                        </select>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>성별</dt>
+                    <dd>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">남자</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">여자</label>
+                    </dd>
+                </dl>
+                <input type="submit" value="회원가입">
+            </form>
+        </div>
+    </body>
+</html>
