@@ -80,3 +80,15 @@ body {
     color: #fff;
     cursor: pointer;
 }
+
+.result{
+    text-align: left;
+}
+.result > .password-check{
+    color: gray;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.result > .password-check.success{
+    color: forestgreen;
+}

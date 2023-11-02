@@ -4,6 +4,7 @@
         <title>회원가입 페이지</title>
         <link rel="stylesheet" href="style.css">
     </head>
+    <script src="script.js"></script>
     <body>
         <div class="wrap">
             <h1>회원가입</h1>
@@ -12,17 +13,18 @@
                     <dt>아이디</dt>
                     <dd>
                         <input type="text" placeholder="아이디 입력">
-                        <input type="idcheck" value="중복체크">
+                        <input type="button" value="중복체크">
                     </dd>
                 </dl>
                 <dl>
                     <dt>비밀번호</dt>
-                    <dd><input type="password" placeholder="비밀번호 입력"></dd>
+                    <dd><input type="password" name="password" placeholder="비밀번호 입력"></dd>
                 </dl>
-                <dl>
-                    <dt>비밀번호 확인</dt>
-                    <dd><input type="password" placeholder="비밀번호 재입력"></dd>
-                </dl>
+                <div class="result">
+                    <div class="password-check">알파벳 대문자를 1개 이상 포함해야 합니다</div>
+                    <div class="password-check">숫자를 1개 이상 포함해야 합니다</div>
+                    <div class="password-check">특수문자(!,@,#,$)를 1개 이상 포함해야 합니다</div>
+                </div>
                 <dl>
                     <dt>이름</dt>
                     <dd><input type="text" placeholder="이름 입력"></dd>
@@ -57,6 +59,8 @@
                 </dl>
                 <input type="submit" value="회원가입">
             </form>
-        </div>
+           
+        </div>  
+        
     </body>
 </html>
